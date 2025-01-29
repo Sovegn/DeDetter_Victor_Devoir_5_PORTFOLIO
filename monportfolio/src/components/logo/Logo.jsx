@@ -1,11 +1,7 @@
-import React from 'react'
+import React from "react";
 
 const Logo = () => {
-  return (
-    <span>
-      JOHN DOE
-    </span>
-  )
-}
+  return <span>JOHN DOE</span>;
+};
 
-export default Logo
+export default Logo;

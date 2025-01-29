@@ -1,13 +1,20 @@
-import React, { useState } from 'react';
-import '../../css/Form.css';
+import React, { useState } from "react";
+import "../../css/Form.css";
 
+/**
+ * Formulaire de contact, prenant en charge les champs nom, email, téléphone,
+ * sujet et message. Les données sont stockées dans un state local et peuvent
+ * être soumises via la méthode handleSubmit.
+ *
+ * @returns {JSX.Element} Composant React correspondant au formulaire de contact.
+ */
 const Form = () => {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    subject: '',
-    message: ''
+    name: "",
+    email: "",
+    phone: "",
+    subject: "",
+    message: "",
   });
 
   const handleSubmit = (e) => {
@@ -17,9 +24,9 @@ const Form = () => {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData(prevState => ({
+    setFormData((prevState) => ({
       ...prevState,
-      [name]: value
+      [name]: value,
     }));
   };
 
@@ -35,7 +42,7 @@ const Form = () => {
           required
         />
       </div>
-      
+
       <div className="form-group">
         <input
           type="email"
@@ -46,7 +53,7 @@ const Form = () => {
           required
         />
       </div>
-      
+
       <div className="form-group">
         <input
           type="tel"
@@ -57,7 +64,7 @@ const Form = () => {
           required
         />
       </div>
-      
+
       <div className="form-group">
         <input
           type="text"
@@ -68,7 +75,7 @@ const Form = () => {
           required
         />
       </div>
-      
+
       <div className="form-group">
         <textarea
           name="message"
@@ -79,7 +86,7 @@ const Form = () => {
           rows="6"
         ></textarea>
       </div>
-      
+
       <button type="submit" className="submit-btn">
         Envoyer
       </button>

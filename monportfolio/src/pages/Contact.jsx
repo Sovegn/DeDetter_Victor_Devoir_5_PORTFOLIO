@@ -1,29 +1,42 @@
-import React from 'react';
-import Form from '../components/Form/Form';
-import '../css/Contact.css';
+import React from "react";
+import Form from "../components/Form/Form";
+import "../css/Contact.css";
 
+/**
+ * Page de contact, affichant un formulaire de contact ainsi que des informations
+ * sur ma localisation.
+ *
+ * @returns {JSX.Element} Composant React correspondant à la page de contact.
+ */
 const Contact = () => {
   return (
     <div className="contact-container">
       <h1 className="contact-title">Contact</h1>
       <p className="contact-subtitle">
-        Pour me contacter en vue d'un entretien ou d'une future collaboration, merci de remplir le formulaire de contact
+        Pour me contacter en vue d'un entretien ou d'une future collaboration,
+        merci de remplir le formulaire de contact
       </p>
-      
+
       <div className="contact-content">
         <div className="contact-form-section">
           <h2>Formulaire de contact</h2>
           <Form />
         </div>
-        
+
         <div className="contact-info-section">
           <h2>Mes coordonnées</h2>
           <div className="contact-details">
             <h3>John Doe</h3>
-            <p><i className="fas fa-map-marker-alt"></i> 40 rue Laure Diebold</p>
+            <p>
+              <i className="fas fa-map-marker-alt"></i> 40 rue Laure Diebold
+            </p>
             <p>69009 Lyon, France</p>
-            <p><i className="fas fa-phone"></i> 10 20 30 40 50</p>
-            <p><i className="fas fa-envelope"></i> john.doe@gmail.com</p>
+            <p>
+              <i className="fas fa-phone"></i> 10 20 30 40 50
+            </p>
+            <p>
+              <i className="fas fa-envelope"></i> john.doe@gmail.com
+            </p>
           </div>
           <div className="map-container">
             <iframe

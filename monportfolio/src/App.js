@@ -7,8 +7,14 @@ import Services from "./pages/Services";
 import MentionsLegales from "./pages/MentionsLegales";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
-import 'bootstrap/dist/css/bootstrap.min.css';
+import "bootstrap/dist/css/bootstrap.min.css";
 
+/**
+ * App is the main component of the application, it renders the Navbar, the main content (a set of routes) and the Footer.
+ * The main content is a set of routes, each route renders a different component (Home, Contact, MentionsLegales, Project, Services).
+ * The Navbar is a component that renders the navigation bar.
+ * The Footer is a component that renders the footer of the page.
+ */
 function App() {
   return (
     <div className="App">

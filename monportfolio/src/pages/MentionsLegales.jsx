@@ -1,7 +1,13 @@
-import React from 'react';
-import { Accordion } from 'react-bootstrap';
-import '../css/MentionsLegales.css';
+import React from "react";
+import { Accordion } from "react-bootstrap";
+import "../css/MentionsLegales.css";
 
+/**
+ * MentionsLegales est un composant React qui affiche les mentions légales
+ * du site, comprenant l'éditeur, l'hébergeur et les crédits.
+ *
+ * @returns {JSX.Element} Le composant React correspondant aux mentions légales.
+ */
 const MentionsLegales = () => {
   return (
     <div className="mentions-container">
@@ -27,7 +33,11 @@ const MentionsLegales = () => {
             <div className="host-info">
               <h3>alwaysdata</h3>
               <p>91 Rue du Faubourg Saint-Honoré, 75008 Paris</p>
-              <a href="http://www.alwaysdata.com" target="_blank" rel="noopener noreferrer">
+              <a
+                href="http://www.alwaysdata.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 www.alwaysdata.com
               </a>
             </div>
@@ -39,20 +49,25 @@ const MentionsLegales = () => {
           <Accordion.Body>
             <div className="credits-info">
               <p>
-                Ce site a été réalisé par John Doe, étudiant au{' '}
+                Ce site a été réalisé par John Doe, étudiant au{" "}
                 <a href="#" className="text-primary">
                   Centre Européen de formation
                 </a>
                 .
               </p>
               <p className="fst-italic">
-                Les images utilisées sur ce site sont libres de droits et ont été obtenues sur le site{' '}
-                <a href="https://pixabay.com" target="_blank" rel="noopener noreferrer">
+                Les images utilisées sur ce site sont libres de droits et ont
+                été obtenues sur le site{" "}
+                <a
+                  href="https://pixabay.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   Pixabay
                 </a>
               </p>
               <p className="fst-italic">
-                La favicon de ce site a été fournie par{' '}
+                La favicon de ce site a été fournie par{" "}
                 <a href="#" className="text-primary">
                   John doe Icons erstellt von Freepik - Flaticon
                 </a>

@@ -1,3 +1,4 @@
+/* Navbar styles */
 .navbar {
     background-color: #1a1a1a;
   height: 60px;
@@ -11,7 +12,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 2rem;
+    padding: 0 2rem; /* Padding uniforme */
   }
   
   .navbar-logo {
@@ -41,17 +42,17 @@
     white-space: nowrap;
   }
   
-
+  /* Style pour le lien actif */
   .nav-links a.active {
     color: #007bff;
   }
   
-
+  /* Style pour le hover */
   .nav-links a:hover {
     color: #007bff;
   }
   
-
+  /* Hamburger button */
   .hamburger {
     display: none;
     flex-direction: column;
@@ -74,7 +75,7 @@
     transform-origin: 1px;
   }
   
-
+  /* Media query pour mobile et tablette */
   @media (max-width: 768px) {
     .hamburger {
       display: flex;

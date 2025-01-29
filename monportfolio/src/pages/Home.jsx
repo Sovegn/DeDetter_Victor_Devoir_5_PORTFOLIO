@@ -1,8 +1,18 @@
-import React , { useState } from "react";
+import React, { useState } from "react";
 import Modal from "../components/modal/Modal";
 import "../css/Home.css";
+import profilImage from "../assets/images/john-doe-about.jpg";
 
+/**
+ * Page d'accueil, affichant une section de présentation, des compétences
+ * et un bouton pour ouvrir une modale de contact.
+ *
+ * @returns {JSX.Element} Composant React correspondant à la page d'accueil.
+ */
 const Home = () => {
+  /**
+   * MockData des Competences du developpeur.
+   */
   const skills = [
     { name: "HTML5", percentage: 90, color: "red-500" },
     { name: "CSS3", percentage: 80, color: "blue-400" },
@@ -10,40 +20,44 @@ const Home = () => {
     { name: "PHP", percentage: 60, color: "green-600" },
     { name: "REACT", percentage: 50, color: "blue-500" },
   ];
+  /**
+   * Statut de la modale.
+   */
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
     <div className="home-container">
       <div className="hero-section">
         <div className="hero-content">
-          <stron>Bonjour, je suis John Doe</stron>
+          <strong>Bonjour, je suis John Doe</strong>
           <h2>Développeur Web full stack</h2>
-          <button 
-            className="cta-button"
-            onClick={() => setIsModalOpen(true)}
-          >
+          <button className="cta-button" onClick={() => setIsModalOpen(true)}>
             En savoir plus
           </button>
         </div>
       </div>
-      <Modal 
-        isOpen={isModalOpen}
-        onClose={() => setIsModalOpen(false)}/>
+      <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
 
       <div className="main-content">
         <div className="content-grid">
           <div className="about-section">
             <h3 className="section-title">A propos</h3>
             <div className="profile-image">
-              <img src="../assets/images/john-doe-about.jpg" alt="Profile" />
+              <img src={profilImage} alt="Profile" />
             </div>
             <div className="about-text">
-              <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Optio, necessitatibus
-                consectetur tempore perferendis nostrum, ex delectus recusandae impedit aut sunt
-                enim placeat? Natus, neque at?</p>
-              <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Optio, necessitatibus
-                consectetur tempore perferendis nostrum, ex delectus recusandae impedit aut sunt
-                enim placeat? Natus, neque at?</p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipiscing elit. Optio,
+                necessitatibus consectetur tempore perferendis nostrum, ex
+                delectus recusandae impedit aut sunt enim placeat? Natus, neque
+                at?
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipiscing elit. Optio,
+                necessitatibus consectetur tempore perferendis nostrum, ex
+                delectus recusandae impedit aut sunt enim placeat? Natus, neque
+                at?
+              </p>
             </div>
           </div>
 
