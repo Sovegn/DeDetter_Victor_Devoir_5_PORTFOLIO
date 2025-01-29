@@ -1,0 +1,85 @@
+.mentions-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.mentions-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.blue-underline {
+  height: 3px;
+  width: 1000px;
+  background-color: #007bff;
+  margin: 0;
+  margin-bottom: 2rem;
+}
+
+.accordion {
+  --bs-accordion-btn-bg: #ffffff;
+  --bs-accordion-active-bg: #e9ecef;
+  --bs-accordion-active-color: #000;
+}
+
+
+.editor-info h3,
+.host-info h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+@media screen and (max-width: 768px) {
+  .mentions-container {
+    margin: 1rem ;
+    padding: 0 0.5rem;
+  }
+
+  .mentions-title {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .blue-underline {
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 1.5rem;
+  }
+
+  .accordion-button {
+    padding: 0.75rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .accordion-body {
+    padding: 1rem;
+    font-size: 0.9rem;
+  }
+
+  .editor-info h3,
+  .host-info h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .editor-info p,
+  .host-info p,
+  .credits-info p {
+    margin-bottom: 0.5rem;
+  }
+
+  .accordion-item {
+    margin-bottom: 0.5rem;
+  }
+
+  .accordion-collapse {
+    background-color: #f8f9fa;
+  }
+}

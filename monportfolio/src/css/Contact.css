@@ -1,0 +1,53 @@
+.contact-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  .contact-title {
+    text-align: center;
+    color: #212529;
+    margin-bottom: 1rem;
+  }
+  
+  .contact-subtitle {
+    text-align: center;
+    color: #6c757d;
+    margin-bottom: 3rem;
+  }
+  
+  .contact-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+  
+  .contact-form-section,
+  .contact-info-section {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+
+  
+  .contact-details {
+    margin-bottom: 2rem;
+  }
+  
+  .contact-details h3 {
+    color: #212529;
+    margin-bottom: 1rem;
+  }
+  
+  .contact-details p {
+    color: #6c757d;
+    margin-bottom: 0.5rem;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .contact-content {
+      grid-template-columns: 1fr;
+    }
+  }
