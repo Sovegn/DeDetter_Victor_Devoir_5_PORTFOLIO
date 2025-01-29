@@ -1,0 +1,47 @@
+.mentions-container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }
+  
+  .mentions-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .blue-underline {
+    height: 3px;
+    width: 800px;
+    background-color: #007bff;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+  }
+  
+  .accordion {
+    --bs-accordion-btn-bg: #ffffff;
+    --bs-accordion-active-bg: #e9ecef;
+    --bs-accordion-active-color: #000;
+  }
+  
+  .accordion-button:not(.collapsed) {
+    box-shadow: none;
+  }
+  
+  .accordion-button:focus {
+    box-shadow: none;
+    border-color: rgba(0,0,0,.125);
+  }
+  
+  .editor-info h3,
+  .host-info h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  
+  
+  a {
+    text-decoration: none;
+    color: #007bff;
+  }
+  

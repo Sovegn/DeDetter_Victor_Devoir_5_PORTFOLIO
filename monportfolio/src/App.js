@@ -7,6 +7,7 @@ import Services from "./pages/Services";
 import MentionsLegales from "./pages/MentionsLegales";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
