@@ -1,24 +1,34 @@
-import React from "react";
+import React , { useState } from "react";
+import Modal from "../components/modal/Modal";
 import "../css/Home.css";
 
 const Home = () => {
   const skills = [
-    { name: "HTML5", percentage: 90, color: "bg-red-500" },
-    { name: "CSS3", percentage: 80, color: "bg-blue-400" },
-    { name: "JAVASCRIPT", percentage: 70, color: "bg-yellow-400" },
-    { name: "PHP", percentage: 60, color: "bg-green-600" },
-    { name: "REACT", percentage: 50, color: "bg-blue-500" },
+    { name: "HTML5", percentage: 90, color: "red-500" },
+    { name: "CSS3", percentage: 80, color: "blue-400" },
+    { name: "JAVASCRIPT", percentage: 70, color: "yellow-400" },
+    { name: "PHP", percentage: 60, color: "green-600" },
+    { name: "REACT", percentage: 50, color: "blue-500" },
   ];
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
     <div className="home-container">
       <div className="hero-section">
         <div className="hero-content">
-          <h1>Bonjour, je suis John Doe</h1>
+          <stron>Bonjour, je suis John Doe</stron>
           <h2>Développeur Web full stack</h2>
-          <button className="cta-button">En savoir plus</button>
+          <button 
+            className="cta-button"
+            onClick={() => setIsModalOpen(true)}
+          >
+            En savoir plus
+          </button>
         </div>
       </div>
+      <Modal 
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}/>
 
       <div className="main-content">
         <div className="content-grid">
